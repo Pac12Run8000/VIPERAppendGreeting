@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GreetingView: View {
     @State private var name = ""
-    @State private var greeting = ""
+    @State public var greeting = ""
 
     var body: some View {
         VStack {

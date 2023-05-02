@@ -11,6 +11,8 @@
 		090FA21D2A01726B00A238DC /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FA21C2A01726B00A238DC /* GreetingView.swift */; };
 		090FA21F2A01726D00A238DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090FA21E2A01726D00A238DC /* Assets.xcassets */; };
 		090FA2222A01726D00A238DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090FA2212A01726D00A238DC /* Preview Assets.xcassets */; };
+		090FA22B2A0187CD00A238DC /* GreetingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FA22A2A0187CD00A238DC /* GreetingPresenter.swift */; };
+		090FA22D2A0187FD00A238DC /* GreetingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090FA22C2A0187FD00A238DC /* GreetingInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		090FA21C2A01726B00A238DC /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
 		090FA21E2A01726D00A238DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		090FA2212A01726D00A238DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		090FA22A2A0187CD00A238DC /* GreetingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingPresenter.swift; sourceTree = "<group>"; };
+		090FA22C2A0187FD00A238DC /* GreetingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				090FA21C2A01726B00A238DC /* GreetingView.swift */,
+				090FA22A2A0187CD00A238DC /* GreetingPresenter.swift */,
+				090FA22C2A0187FD00A238DC /* GreetingInteractor.swift */,
 			);
 			path = Greetings;
 			sourceTree = "<group>";
@@ -154,7 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				090FA21D2A01726B00A238DC /* GreetingView.swift in Sources */,
+				090FA22B2A0187CD00A238DC /* GreetingPresenter.swift in Sources */,
 				090FA21B2A01726B00A238DC /* VIPERAppendGreetingApp.swift in Sources */,
+				090FA22D2A0187FD00A238DC /* GreetingInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
