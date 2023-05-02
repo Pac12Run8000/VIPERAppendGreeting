@@ -51,8 +51,8 @@
 		090FA2192A01726B00A238DC /* VIPERAppendGreeting */ = {
 			isa = PBXGroup;
 			children = (
+				090FA2282A01864900A238DC /* Modules */,
 				090FA21A2A01726B00A238DC /* VIPERAppendGreetingApp.swift */,
-				090FA21C2A01726B00A238DC /* GreetingView.swift */,
 				090FA21E2A01726D00A238DC /* Assets.xcassets */,
 				090FA2202A01726D00A238DC /* Preview Content */,
 			);
@@ -65,6 +65,22 @@
 				090FA2212A01726D00A238DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		090FA2282A01864900A238DC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				090FA2292A0186A200A238DC /* Greetings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		090FA2292A0186A200A238DC /* Greetings */ = {
+			isa = PBXGroup;
+			children = (
+				090FA21C2A01726B00A238DC /* GreetingView.swift */,
+			);
+			path = Greetings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
