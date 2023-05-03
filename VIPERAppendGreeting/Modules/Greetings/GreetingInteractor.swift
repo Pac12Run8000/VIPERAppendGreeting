@@ -10,8 +10,13 @@ import Foundation
 
 class GreetingInteractor {
     func generateGreeting(for name: String, completion: @escaping (Result<String, Error>) -> Void) {
-        let greeting = "Hello, \(name)!"
-        completion(.success(greeting))
+        
+        if name.isEmpty {
+            completion(.success("Hello, (unkwown)"))
+            return
+        }
+//        let greeting = "Hello, \(name)!"
+        completion(.success("Hello, \(name)"))
     }
 }
 
