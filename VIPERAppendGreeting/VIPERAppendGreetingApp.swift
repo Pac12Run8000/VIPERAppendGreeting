@@ -11,7 +11,8 @@ import SwiftUI
 struct VIPERAppendGreetingApp: App {
     var body: some Scene {
         WindowGroup {
-            GreetingView()
-        }
+            let interactor = GreetingInteractor()
+            let presenter = GreetingPresenter(view: nil, interactor: interactor)
+            GreetingView(presenter: presenter)}
     }
 }

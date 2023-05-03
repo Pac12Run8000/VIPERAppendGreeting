@@ -4,10 +4,13 @@
 //
 //  Created by Michelle Grover on 5/2/23.
 //
+import SwiftUI
 
-class GreetingPresenter {
-    private let view: GreetingView?
-    private let interactor: GreetingInteractor
+class GreetingPresenter: ObservableObject {
+    public var view: GreetingView?
+    public let interactor: GreetingInteractor
+    
+    @Published var greeting: String = ""
     
     init(view: GreetingView?, interactor: GreetingInteractor) {
         self.view = view
@@ -18,11 +21,10 @@ class GreetingPresenter {
         interactor.generateGreeting(for: name) { [weak self] result in
             switch result {
             case .success(let greeting):
-                self?.view?.greeting = greeting
+                self?.greeting = greeting
             case .failure(let error):
                 print("Error generating greeting: \(error.localizedDescription)")
             }
         }
     }
 }
-

@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct GreetingView: View {
+    
+    @ObservedObject var presenter:GreetingPresenter
     @State private var name = ""
-    @State public var greeting = ""
+    
+
+    
 
     var body: some View {
         VStack {
@@ -18,24 +22,23 @@ struct GreetingView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             
             Button("Generate Greeting") {
-                greeting = "Hello, \(name)!"
+                presenter.generateGreeting(for: name)
             }
             .padding()
             .foregroundColor(.white)
             .background(Color.blue)
             .cornerRadius(8)
 
-            Text(greeting)
+            Text(presenter.greeting)
                 .padding()
                 .frame(width: 200, height: 50)
                 .border(Color.gray, width: 1)
-            
         }
     }
 }
 
 struct GreetingView_Previews: PreviewProvider {
     static var previews: some View {
-        GreetingView()
+        GreetingView(presenter: GreetingPresenter(view: nil, interactor: GreetingInteractor()))
     }
 }
